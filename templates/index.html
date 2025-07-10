@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Addiction Level Calculator</title>
+</head>
+
+<body>
+<h1 style="text-align: center;">Addiction Level Calculator</h1>
+ <form method="POST">
+    <label for="Age">Age:</label>
+    <input type="number" name="Age" step="any" id="Age" required><br>
+
+    <label for="Gender">Gender (0/1):</label>
+    <input type="number" name="Gender" step="any" id="Gender" required><br>
+
+    <label for="School_Grade">School Grade:</label>
+    <input type="number" name="School_Grade" step="any" id="School_Grade" required><br>
+
+    <label for="Daily_Usage_Hours">Daily Usage Hours:</label>
+    <input type="number" name="Daily_Usage_Hours" step="any" id="Daily_Usage_Hours" required><br>
+
+    <label for="Sleep_Hours">Sleep Hours:</label>
+    <input type="number" name="Sleep_Hours" step="any" id="Sleep_Hours" required><br>
+
+    <label for="Academic_Performance">Academic Performance:</label>
+    <input type="number" name="Academic_Performance" step="any" id="Academic_Performance" required><br>
+
+    <label for="Social_Interactions">Social Interactions:</label>
+    <input type="number" name="Social_Interactions" step="any" id="Social_Interactions" required><br>
+
+    <label for="Exercise_Hours">Exercise Hours:</label>
+    <input type="number" name="Exercise_Hours" step="any" id="Exercise_Hours" required><br>
+
+    <label for="Anxiety_Level">Anxiety Level:</label>
+    <input type="number" name="Anxiety_Level" step="any" id="Anxiety_Level" required><br>
+
+    <label for="Depression_Level">Depression Level:</label>
+    <input type="number" name="Depression_Level" step="any" id="Depression_Level" required><br>
+
+    <label for="Self_Esteem">Self Esteem:</label>
+    <input type="number" name="Self_Esteem" step="any" id="Self_Esteem" required><br>
+
+    <label for="Parental_Control">Parental Control:</label>
+    <input type="number" name="Parental_Control" step="any" id="Parental_Control" required><br>
+
+    <label for="Screen_Time_Before_Bed">Screen Time Before Bed:</label>
+    <input type="number" name="Screen_Time_Before_Bed" step="any" id="Screen_Time_Before_Bed" required><br>
+
+    <label for="Phone_Checks_Per_Day">Phone Checks Per Day:</label>
+    <input type="number" name="Phone_Checks_Per_Day" step="any" id="Phone_Checks_Per_Day" required><br>
+
+    <label for="Apps_Used_Daily">Apps Used Daily:</label>
+    <input type="number" name="Apps_Used_Daily" step="any" id="Apps_Used_Daily" required><br>
+
+    <label for="Time_on_Social_Media">Time on Social Media:</label>
+    <input type="number" name="Time_on_Social_Media" step="any" id="Time_on_Social_Media" required><br>
+
+    <label for="Time_on_Gaming">Time on Gaming:</label>
+    <input type="number" name="Time_on_Gaming" step="any" id="Time_on_Gaming" required><br>
+
+    <label for="Time_on_Education">Time on Education:</label>
+    <input type="number" name="Time_on_Education" step="any" id="Time_on_Education" required><br>
+
+    <label for="Phone_Usage_Purpose">Phone Usage Purpose:</label>
+    <input type="number" name="Phone_Usage_Purpose" step="any" id="Phone_Usage_Purpose" required><br>
+
+    <label for="Family_Communication">Family Communication:</label>
+    <input type="number" name="Family_Communication" step="any" id="Family_Communication" required><br>
+
+    <label for="Weekend_Usage_Hours">Weekend Usage Hours:</label>
+    <input type="number" name="Weekend_Usage_Hours" step="any" id="Weekend_Usage_Hours" required><br>
+
+    <br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction is not none %}
+        <h3>Your Predicted Addiction Level: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
